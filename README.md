@@ -9,7 +9,7 @@ In The future i will improve this project. To the Next level.
 ## Here are the step-by-step instructions for running the code:
 
 ### 1- Install requirements.txt:
-To run this code type the given command in the terminal: pip install -q requirements.txt
+To run this code type the given command in the terminal: pip install -r requirements.txt
 
 ## 2- Navigate to the Code Directory:
 Use the cd command to navigate to the directory where your code is located. For example: cd path/to/your/code/directory
