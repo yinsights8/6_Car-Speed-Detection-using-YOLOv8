@@ -21,4 +21,5 @@ Download yolov8 weigths and place in your Flask app code directory.
 Once you're in the directory containing your ClientApp.py file, run the following command: python ClientApp.py
 
 Following these steps should launch your Flask web application, allowing you to access it through a web browser or any other HTTP client.
-![Uploading Screenshot (386).png…]()
+![Screenshot (386)](https://github.com/yinsights8/6_Car-Speed-Detection-using-YOLOv8/assets/108249945/0da60e2b-be22-486f-91eb-99ee2c5795bc)
+
