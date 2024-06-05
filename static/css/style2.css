@@ -1,0 +1,72 @@
+  /* webcam container */
+.camera-container{
+    background-color: #DDDDDD;
+    display: flex;
+    position: fixed;
+    border: none;
+    border-radius: 10px;
+    height: 559px;
+    width: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    padding: 20px 0px 15px;
+    box-shadow: 2px 2px gray, -1em 0 .85em gray;
+  }
+
+.cam{
+  background-color: #212529;
+  height: 480px;
+  width: 640px;
+  /* border: 3px solid gray; */
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  right: 50px;
+  margin: 50px;
+  top: -12px;
+  box-shadow: 2px 2px gray, -1em 0 .85em gray;
+} 
+
+.webCm{
+  border-radius: 10px;
+}
+
+.uploded_video{
+  border-radius: 10px;
+}
+
+
+form span{
+  position: absolute;
+  bottom: 47px;
+  margin: -44px -190px;
+}
+
+form #message p{
+  display: inline;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+
+form #upload-button{
+  margin-left: -50px;
+}
+
+/* switches */
+.switch-1{
+  /* background-color: white; */
+  margin-left: 177px;
+  margin-top: -15px;
+  height: 30px;
+  width: 20%;
+}
+
+.switch-2{
+  /* background-color: white; */
+  align-items: center;
+  margin-left: -177px;
+  /* height: 30px;
+  width: 70%; */
+}
+

@@ -1,0 +1,54 @@
+
+:root{
+  --offcanvasWidth: 270px;
+  --offcanvasHeight: 56px;
+}
+.sidebar-nav{
+  background-color: #212529;
+  width: var(--offcanvasWidth) !important;
+  color: white;
+}
+
+.sidebar-nav a:hover {
+  background-color: gray;
+}
+
+
+
+.sidebar-link{
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-link .right-icon{
+  display: inline-flex;
+  transition: all ease-in-out 0.50s;
+}
+
+/* to rotate the right icon when click */
+.sidebar-link[aria-expanded="true"] .right-icon{
+  transform: rotate(180deg);
+}
+
+@media (min-width: 997px) {
+
+  body{
+    overflow: auto !important;
+  }
+
+  .offcanvas-backdrop::before{
+    display: none !important;
+  }
+
+  main{
+    margin-left: var(--offcanvasWidth);
+  }
+
+  .sidebar-nav{
+    transform: none !important;
+    visibility: visible !important;
+    top: var(--offcanvasHeight) !important;
+    height: calc(100% - var(--offcanvasHeight));
+    /* margin-top: var(--offcanvasHeight); */
+  }
+}

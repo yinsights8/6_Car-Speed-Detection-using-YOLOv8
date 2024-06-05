@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath":"venv10/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+    "liveServer.settings.port": 5501
+}

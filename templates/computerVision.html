@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Computer Vision</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- custom style -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style2.css"> 
+    <link rel="stylesheet" href="/static/css/cvstyle.css">
+
+    
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />       
+
+</head>
+  <body>
+
+    <header>
+    <!-- navbar -->
+        <nav class="navbar  navbar-expand-lg bg-fs-light bg-dark fixed-top">
+            <div class="container-fluid">
+
+              <!-- offcanvas button -->
+              <button class="btn btn-#212529" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span><i class="fa-solid fa-bars text-light"></i></span>
+              </button>
+              <!-- offcanvas button -->
+
+                <div class="logo d-flex justify-content-center">
+                    <h2><span><i class="bi bi-yin-yang text-light m-3"></i></span></h2>
+                    <a class="navbar-brand fw-bold text-uppercase text-light me-auto">C-VISION</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa-solid fa-bars text-light"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <form class="d-flex ms-auto" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                        <i class="bi bi-search"></i>
+                      </button>
+                    </div>
+                  
+                  </form>
+
+                  <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item dropdown text-light list-unstyled">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-person mx-2 text-light"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+                
+        </nav>
+    <!-- navbar -->
+    </header>
+
+    <!-- side-bar -->
+      
+      <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        
+        <div class="offcanvas-body p-0">
+          <nav>
+            <ul class="navbar-nav">
+              <li>
+                <div class=" text-secondary small fw-bold text-uppercase px-3 my-4">
+                  core
+                </div>
+              </li>
+              <li>
+                <a href="{{ url_for('index') }}" class="nav-link px-3 active">
+                  <span class="me-2">
+                    <i class="bi bi-speedometer2"></i>
+                  </span>
+                  <span>Dashbord</span>
+                </a>
+              </li>
+              <li class="my-4">
+                <hr>
+              </li>
+              <li>
+                <div class=" text-secondary small fw-bold text-uppercase px-3">
+                  interface
+                </div>
+              </li>
+
+              <li>
+                <a class="nav-link text-uppercase sidebar-link px-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <span class="me-2"><i class="bi bi-cast"></i></span>
+                  <span >Projects</span> 
+                  <span class="right-icon ms-auto">
+                    <i class="bi bi-chevron-compact-down"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <div>
+                    <ul class="nav-bar ps-3 list-unstyled">
+                      <li>
+                        <a href="#" class="nav-link"></a>
+                        <!-- items for CV -->
+
+                        <ul class="list-unstyled">
+                          <!-- for ML -->
+                          <li>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2">
+                                  <!-- icon -->
+                                  <i class="bi bi-gear-wide-connected">
+
+                                  </i></span>
+                                <span>Machine Learning</span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ML</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                          </li>
+
+                          <!-- for DL -->
+                          <li>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2">
+                                  <!-- icon -->
+                                  <i class="bi bi-camera-reels"></i>
+                                </span>
+                                <span>Deep Learining</span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                          </li>
+
+                          <!-- for CV -->
+                          <li>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2">
+                                  <!-- icon -->
+                                  <i class="bi bi-eye"></i>
+                                </span>
+                                <span>Computer Vision</span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{ url_for('ComputerVision') }}">Object Detection</a></li>
+                                <li><a class="dropdown-item" href="#">Ai Trainer</a></li>
+                                <li><a class="dropdown-item" href="#">Finger Counter</a></li>
+                              </ul>
+                            </div>
+                          </li>
+
+                          <!-- For NLP -->
+                          <li>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2">
+                                  <!-- icon -->
+                                  <i class="bi bi-chat-right-dots"></i></i>
+                                </span>
+                                <span>NLP</span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                          </li>
+
+                        </ul>
+                        
+                        
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <!-- side-bar -->
+    
+
+    <!-- main Content -->
+    <main class="mt-5 pt-4" >
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 fw-bold fs-3">
+              Projects
+            </div>
+            <div class="row" id="card-Section">
+              <!-- cards 1 -->
+              <div class="col-md-3">
+                <div class="card" style="width: 18rem;" id="cards">
+                  <img src="/static/images/speed_Detection.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Car Speed Detection</h5>
+                    <p class="card-text">
+                        This project utilizes YOLOv8 for real-time car speed detection, 
+                        deployed on a web server. It enhances road safety by accurately tracking vehicles and 
+                        enforcing speed limits, aiding authorities and stakeholders in traffic management and analysis.
+                    </p>
+                    <a href="objectDetection" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <!-- cards 2 -->
+              
+  
+              <!-- cards 3 -->
+              
+  
+              <!-- cards 4 -->
+              
+  
+  
+            </div>
+          </div>
+        </div>
+      </main>
+      
+    <!-- main Content -->
+
+
+    <script src="/static/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

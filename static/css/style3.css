@@ -1,0 +1,117 @@
+#main-container{
+    background-color: #DDDDDD; 
+    border-radius: 4px ;
+    border: none;
+    position: absolute;
+    right: 2.188rem;
+    top: 123px;
+    bottom: 20px;
+    height: 85%;
+    width: 64%;
+    box-shadow:  3px 3px #DDDDDD, -1em 0 .4em gray;
+}
+
+#webcam-button-row{
+    border-bottom: 2px solid #000;
+    background-color: pink;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+#upload-button-row{
+    background-color: gray;
+    border-top: 2px solid #000;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    bottom: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+} 
+
+
+#cam{
+    /* background-color: #000; */
+    position: absolute;
+    width: 100%;
+    height: 92%;
+    right: 0px;
+    left: 0px;
+    top: 20px;
+    bottom: 15px;
+}
+
+
+#form p{
+    display: block; /* Change display to block */
+    text-align: center; /* Align text to the right */
+    font-size: 0.85rem
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* xs */
+/* @media (min-width: 475px){
+    .content{
+       transform: scale(2,2) ;
+    }
+} */
+
+/* sm */
+/* @media (min-width: 475px) and (max-width: 640px){
+    .content{
+       transform: scale(1.5,0.85) ;
+    }
+} */
+
+/* md */
+/* @media (min-width: 768px){
+    .content{
+       transform: scale(2, 0.5) ; scale(x, y)
+    }
+} */
+
+/* lg */
+/* @media (max-width: 1024px){
+    .content{
+       transform: scale(2, 0.5) ; scale(x, y)
+    }
+} */
+
+/* xl */
+/* @media (max-width: 1280px){
+    .content{
+       transform: scale(2, 0.5) ; scale(x, y)
+    }
+} */
+
+/* 2xl */
+/* @media (max-width: 1536px){
+    .content{
+       transform: scale(2, 0.5) ; scale(x, y)
+    }
+} */
